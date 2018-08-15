@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/quantityFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="right"
+    tools:context="cn.edu.ldu.myrestaurant.QuantityFragment">
+
+    <Button
+        android:id="@+id/btnReduce"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="─"
+        android:textColor="@android:color/holo_green_dark"
+        android:background="@drawable/edit_border"
+        android:textSize="24sp" />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:ems="3"
+        android:inputType="number"
+        android:text="1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:background="@drawable/edit_border" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="＋"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:background="@drawable/edit_border" />
+</LinearLayout>

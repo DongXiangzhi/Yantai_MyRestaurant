@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_pager"
+        android:title="分页预览"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_zoom_out" />
+    <item
+        android:id="@+id/action_login"
+        android:title="登录"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_settings"
+        android:title="设置"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_interSave"
+        android:title="保存内部文件"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_interRead"
+        android:title="读取内部文件"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_interDelete"
+        android:title="删除内部文件"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_outerSave"
+        android:title="保存外部文件"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_outerRead"
+        android:title="读取外部文件"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_outerDelete"
+        android:title="删除外部文件"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_exportJson"
+        android:title="导出Json文件"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_importJson"
+        android:title="导入Json文件"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_displayAll"
+        android:title="显示全部"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_displayByCategory"
+        android:title="分类显示"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_about"
+        android:title="关于..."
+        app:showAsAction="ifRoom" />
+</menu>

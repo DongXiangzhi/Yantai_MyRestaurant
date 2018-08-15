@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.edu.ldu.myrestaurant">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DetailActivity"
+            android:label="@string/itemDescription"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="用户登录"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".PrefsActivity"
+            android:label="界面布局列数设定"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AboutActivity"
+            android:label="设计说明"
+            android:parentActivityName=".MainActivity" />
+
+        <service
+            android:name=".service.MyService"
+            android:exported="false" />
+
+        <activity
+            android:name=".PagerActivity"
+            android:label="菜品分页预览"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".OrderActivity"
+            android:label="菜品预订"
+            android:parentActivityName=".MainActivity"/>
+    </application>
+</manifest>
